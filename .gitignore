@@ -1,0 +1,90 @@
+# ==========================================
+# BDC 2026 - Git Ignore
+# ==========================================
+
+# ------------------------------------------
+# MODEL & CHECKPOINTS
+# ------------------------------------------
+
+# Folder model
+models/
+
+
+# PyTorch model files
+*.pth
+*.pt
+*.ckpt
+
+
+# ------------------------------------------
+# DATASET
+# ------------------------------------------
+Data Train Baru/
+Data Train lama/
+
+/BDC 2026/train/
+/BDC 2026/test/
+/BDC 2026/val/
+
+# ------------------------------------------
+# OOF / TEST PREDICTIONS
+# ------------------------------------------
+
+oof_probs_large/
+oof_probs_tta/
+
+test_probs_large/
+test_probs_tta/
+
+
+# ------------------------------------------
+# PYTHON CACHE
+# ------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+
+# ------------------------------------------
+# LOCAL / TEMPORARY FILES
+# ------------------------------------------
+
+*.tmp
+*.temp
+*.log
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+
+# ------------------------------------------
+# OPTIONAL: LARGE EXPERIMENT OUTPUTS
+# ------------------------------------------
+
+# Uncomment jika similarity_check hanya berisi
+# hasil/output eksperimen dan tidak perlu di-GitHub.
+# similarity_check/
+
+
+# ------------------------------------------
+# VIRTUAL ENVIRONMENT
+# ------------------------------------------
+
+.venv/
+venv/
+env/
+ENV/
+
+
+# ------------------------------------------
+# IDE
+# ------------------------------------------
+
+.vscode/
+.idea/
